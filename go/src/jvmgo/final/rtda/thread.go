@@ -12,6 +12,7 @@ JVM
         OperandStack
 */
 type Thread struct {
+	//pc是线程独有的，所以方法的调入返回不影响线程中的pc计数器
 	pc    int // the address of the instruction currently being executed
 	stack *Stack
 	// todo

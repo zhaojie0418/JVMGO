@@ -22,6 +22,8 @@ func (self *MethodRef) ResolvedMethod() *Method {
 }
 
 // jvms8 5.4.3.3
+//这里的d是想要调用方法的调用者
+//这里的C是被调用方法所在的类，d想要调用c中的方法首先得解析c这个类
 func (self *MethodRef) resolveMethodRef() {
 	d := self.cp.class
 	c := self.ResolvedClass()

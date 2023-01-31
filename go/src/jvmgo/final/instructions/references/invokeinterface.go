@@ -11,10 +11,12 @@ type INVOKE_INTERFACE struct {
 	// zero uint8
 }
 
+//注意其操作数相比于之前的三个并不是2字节而是4字节，
+
 func (self *INVOKE_INTERFACE) FetchOperands(reader *base.BytecodeReader) {
 	self.index = uint(reader.ReadUint16())
-	reader.ReadUint8() // count
-	reader.ReadUint8() // must be 0
+	reader.ReadUint8() // count  给方法传递参数所需要的slot的值
+	reader.ReadUint8() // must be 0  仅仅是为了预留为版本迭代
 }
 
 func (self *INVOKE_INTERFACE) Execute(frame *rtda.Frame) {

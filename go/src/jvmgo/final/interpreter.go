@@ -41,12 +41,14 @@ func loop(thread *rtda.Thread, logInst bool) {
 
 		// execute
 		inst.Execute(frame)
+		//如果还有待执行的栈帧则继续执行
 		if thread.IsStackEmpty() {
 			break
 		}
 	}
 }
 
+//用于在方法执行过程中打印指令信息
 func logInstruction(frame *rtda.Frame, inst base.Instruction) {
 	method := frame.Method()
 	className := method.Class().Name()
@@ -55,6 +57,7 @@ func logInstruction(frame *rtda.Frame, inst base.Instruction) {
 	fmt.Printf("%v.%v() #%2d %T %v\n", className, methodName, pc, inst, inst)
 }
 
+//用于打印java虚拟机栈信息
 func logFrames(thread *rtda.Thread) {
 	for !thread.IsStackEmpty() {
 		frame := thread.PopFrame()

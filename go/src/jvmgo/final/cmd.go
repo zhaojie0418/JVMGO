@@ -8,8 +8,8 @@ import "os"
 type Cmd struct {
 	helpFlag         bool
 	versionFlag      bool
-	verboseClassFlag bool
-	verboseInstFlag  bool
+	verboseClassFlag bool //控制是否输出类加载信息
+	verboseInstFlag  bool //控制是否输出指令执行信息
 	cpOption         string
 	XjreOption       string
 	class            string

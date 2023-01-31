@@ -15,8 +15,10 @@ type ARETURN struct{ base.NoOperandsInstruction }
 
 func (self *ARETURN) Execute(frame *rtda.Frame) {
 	thread := frame.Thread()
+	//先弹出一个被调用的，再将调用者的弹出
 	currentFrame := thread.PopFrame()
 	invokerFrame := thread.TopFrame()
+	//最后将结果从被调用者的操作数栈中弹出
 	ref := currentFrame.OperandStack().PopRef()
 	invokerFrame.OperandStack().PushRef(ref)
 }

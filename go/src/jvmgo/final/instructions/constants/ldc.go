@@ -6,6 +6,8 @@ import "jvmgo/final/rtda/heap"
 
 //注意ldc和ldc_W的区别只在于操作数的宽度
 // Push item from run-time constant pool
+//LDC == load constant
+
 type LDC struct{ base.Index8Instruction }
 
 func (self *LDC) Execute(frame *rtda.Frame) {

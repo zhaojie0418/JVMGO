@@ -33,6 +33,7 @@ func newMethod(class *Class, cfMethod *classfile.MemberInfo) *Method {
 	method.parsedDescriptor = md
 	method.calcArgSlotCount(md.parameterTypes)
 	if method.IsNative() {
+		//这里的本地代码是借用java虚拟机栈实现的，所以这里需要将其伪装成java方法
 		method.injectCodeAttribute(md.returnType)
 	}
 	return method
@@ -66,10 +67,11 @@ func (self *Method) calcArgSlotCount(paramTypes []string) {
 }
 
 func (self *Method) injectCodeAttribute(returnType string) {
+	//由于本地方法没有class文件，所以maxStack和maxLocals都需要手动实现
 	self.maxStack = 4 // todo
 	self.maxLocals = self.argSlotCount
-	switch returnType[0] {
-	case 'V':
+	switch returnType[0] { //并且手动赋值对应的code
+	case 'V': //0xfe是保留的指令，对应编写的invokeNative指令
 		self.code = []byte{0xfe, 0xb1} // return
 	case 'L', '[':
 		self.code = []byte{0xfe, 0xb0} // areturn

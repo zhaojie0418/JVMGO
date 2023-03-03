@@ -54,6 +54,7 @@ func (self *DALOAD) Execute(frame *rtda.Frame) {
 	index := stack.PopInt()
 	arrRef := stack.PopRef()
 
+	//判断数组越界和对象元素为空
 	checkNotNil(arrRef)
 	doubles := arrRef.Doubles()
 	checkIndex(len(doubles), index)

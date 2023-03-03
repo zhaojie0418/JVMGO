@@ -1,5 +1,7 @@
 package heap
 
+//数组类相关的方法
+
 func (self *Class) IsArray() bool {
 	return self.name[0] == '['
 }
@@ -30,10 +32,12 @@ func (self *Class) NewArray(count uint) *Object {
 		return &Object{self, make([]float32, count), nil}
 	case "[D":
 		return &Object{self, make([]float64, count), nil}
-	default:
+	default: //创建对象数组
 		return &Object{self, make([]*Object, count), nil}
 	}
 }
+
+//由于bool数组是使用字节数组实现的，所以单独列出
 
 func NewByteArray(loader *ClassLoader, bytes []int8) *Object {
 	return &Object{loader.LoadClass("[B"), bytes, nil}

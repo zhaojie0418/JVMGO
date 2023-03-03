@@ -2,7 +2,7 @@ package heap
 
 type Object struct {
 	class *Class
-	data  interface{} // Slots for Object, []int32 for int[] ...
+	data  interface{} // 如果是普通对象，则data存放的仍然是slots变量，如果是数组则存放的各种类型的数组
 	extra interface{}
 }
 

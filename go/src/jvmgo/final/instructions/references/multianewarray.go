@@ -11,8 +11,8 @@ type MULTI_ANEW_ARRAY struct {
 }
 
 func (self *MULTI_ANEW_ARRAY) FetchOperands(reader *base.BytecodeReader) {
-	self.index = reader.ReadUint16()
-	self.dimensions = reader.ReadUint8()
+	self.index = reader.ReadUint16()     //具体的类
+	self.dimensions = reader.ReadUint8() //多维数组的维数
 }
 func (self *MULTI_ANEW_ARRAY) Execute(frame *rtda.Frame) {
 	cp := frame.Method().Class().ConstantPool()

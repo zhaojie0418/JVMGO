@@ -1,5 +1,7 @@
 package heap
 
+//针对数组对象所编写的方法
+
 func (self *Object) Bytes() []int8 {
 	return self.data.([]int8)
 }
@@ -24,6 +26,9 @@ func (self *Object) Doubles() []float64 {
 func (self *Object) Refs() []*Object {
 	return self.data.([]*Object)
 }
+
+//由于返回值不同的返回指令有多条，但是获取数组长度的指令只有一条
+//所以需要使用同一的一个函数在内部根据数组的类型获取长度
 
 func (self *Object) ArrayLength() int32 {
 	switch self.data.(type) {

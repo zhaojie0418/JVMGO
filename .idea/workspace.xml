@@ -4,13 +4,37 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e11c38e2-bc09-4f22-bd52-409037926069" name="变更" comment="" />
+    <list default="true" id="e11c38e2-bc09-4f22-bd52-409037926069" name="变更" comment="修改注释及代码">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/src/jvmgo/final/instructions/constants/ldc.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/src/jvmgo/final/instructions/constants/ldc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/src/jvmgo/final/instructions/loads/xaload.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/src/jvmgo/final/instructions/loads/xaload.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/src/jvmgo/final/instructions/references/anewarray.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/src/jvmgo/final/instructions/references/anewarray.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/src/jvmgo/final/instructions/references/multianewarray.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/src/jvmgo/final/instructions/references/multianewarray.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/src/jvmgo/final/instructions/references/newarray.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/src/jvmgo/final/instructions/references/newarray.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/src/jvmgo/final/native/registry.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/src/jvmgo/final/native/registry.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/src/jvmgo/final/rtda/heap/array_class.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/src/jvmgo/final/rtda/heap/array_class.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/src/jvmgo/final/rtda/heap/array_object.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/src/jvmgo/final/rtda/heap/array_object.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/src/jvmgo/final/rtda/heap/method.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/src/jvmgo/final/rtda/heap/method.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/src/jvmgo/final/rtda/heap/object.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/src/jvmgo/final/rtda/heap/object.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/src/jvmgo/final/rtda/heap/string_pool.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/src/jvmgo/final/rtda/heap/string_pool.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="GOROOT" url="file://$PROJECT_DIR$/../../../Go_tool/go_source" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
@@ -18,6 +42,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2L3FNqOmc8ewEGOi2vUFB8z7W0p" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -36,6 +61,21 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="修改注释及代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改注释及代码" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

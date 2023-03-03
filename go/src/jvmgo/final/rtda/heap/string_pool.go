@@ -10,7 +10,8 @@ func JString(loader *ClassLoader, goStr string) *Object {
 	if internedStr, ok := internedStrings[goStr]; ok {
 		return internedStr
 	}
-
+	//go字符串是UTF8，java字符串是UTF16
+	//如果字符串常量池中没有，则先将这个字符串转换成
 	chars := stringToUtf16(goStr)
 	jChars := &Object{loader.LoadClass("[C"), chars, nil}
 

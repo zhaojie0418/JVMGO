@@ -21,6 +21,9 @@ type NEW_ARRAY struct {
 	atype uint8
 }
 
+//第一个操作数是对应的类的数组
+//第二个操作数是数组的长度，从操作数栈中弹出
+
 func (self *NEW_ARRAY) FetchOperands(reader *base.BytecodeReader) {
 	self.atype = reader.ReadUint8()
 }

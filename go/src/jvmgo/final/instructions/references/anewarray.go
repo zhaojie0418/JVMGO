@@ -4,7 +4,7 @@ import "jvmgo/final/instructions/base"
 import "jvmgo/final/rtda"
 import "jvmgo/final/rtda/heap"
 
-// Create new array of reference
+// ANEW_ARRAY Create new array of reference
 type ANEW_ARRAY struct{ base.Index16Instruction }
 
 func (self *ANEW_ARRAY) Execute(frame *rtda.Frame) {

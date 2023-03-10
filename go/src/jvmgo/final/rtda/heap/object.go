@@ -3,7 +3,7 @@ package heap
 type Object struct {
 	class *Class
 	data  interface{} // 如果是普通对象，则data存放的仍然是slots变量，如果是数组则存放的各种类型的数组
-	extra interface{}
+	extra interface{} // 记录object结构体的额外信息
 }
 
 // create normal (non-array) object

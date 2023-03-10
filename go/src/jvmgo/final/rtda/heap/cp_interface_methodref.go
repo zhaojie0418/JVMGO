@@ -40,13 +40,12 @@ func (self *InterfaceMethodRef) resolveInterfaceMethodRef() {
 	self.method = method
 }
 
-// todo
 func lookupInterfaceMethod(iface *Class, name, descriptor string) *Method {
 	for _, method := range iface.methods {
 		if method.name == name && method.descriptor == descriptor {
 			return method
 		}
 	}
-
+	//如果当前类中没有对应方法，则在对应接口的接口中查找
 	return lookupMethodInInterfaces(iface.interfaces, name, descriptor)
 }

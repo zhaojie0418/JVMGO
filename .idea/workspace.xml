@@ -6,17 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e11c38e2-bc09-4f22-bd52-409037926069" name="变更" comment="修改注释及代码">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go/src/jvmgo/final/instructions/constants/ldc.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/src/jvmgo/final/instructions/constants/ldc.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go/src/jvmgo/final/instructions/loads/xaload.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/src/jvmgo/final/instructions/loads/xaload.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go/src/jvmgo/final/instructions/references/anewarray.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/src/jvmgo/final/instructions/references/anewarray.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go/src/jvmgo/final/instructions/references/multianewarray.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/src/jvmgo/final/instructions/references/multianewarray.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go/src/jvmgo/final/instructions/references/newarray.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/src/jvmgo/final/instructions/references/newarray.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go/src/jvmgo/final/native/registry.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/src/jvmgo/final/native/registry.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go/src/jvmgo/final/rtda/heap/array_class.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/src/jvmgo/final/rtda/heap/array_class.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go/src/jvmgo/final/rtda/heap/array_object.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/src/jvmgo/final/rtda/heap/array_object.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go/src/jvmgo/final/rtda/heap/method.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/src/jvmgo/final/rtda/heap/method.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/src/jvmgo/final/instructions/base/instruction.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/src/jvmgo/final/instructions/base/instruction.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go/src/jvmgo/final/rtda/heap/cp_interface_methodref.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/src/jvmgo/final/rtda/heap/cp_interface_methodref.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go/src/jvmgo/final/rtda/heap/object.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/src/jvmgo/final/rtda/heap/object.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go/src/jvmgo/final/rtda/heap/string_pool.go" beforeDir="false" afterPath="$PROJECT_DIR$/go/src/jvmgo/final/rtda/heap/string_pool.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
